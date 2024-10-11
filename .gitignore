@@ -5,7 +5,7 @@ Projekt1zaawansowane/.vs/
 Projekt1zaawansowane/*.opendb
 Projekt1zaawansowane/Debug/
 Projekt1zaawansowane/Release/
-
+64x/
 # Ignorowanie plików opendb (baza danych intellisense)
 *.opendb
 *.VC.opendb

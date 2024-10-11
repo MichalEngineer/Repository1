@@ -8,5 +8,6 @@ int main()
     a.dodajogon(1);
     a.dodajglowa(3);
     a.dodajindex(5, 3);
+    a.dodajogon(1);
     a.wypisz();
 }

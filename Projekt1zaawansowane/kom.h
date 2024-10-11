@@ -5,7 +5,7 @@ public:
     int a;
     kom* next;
     kom* prev;
-    kom(int b);
+    kom(int a);
     kom();
 };
 
@@ -16,6 +16,8 @@ private:
 
 public:
     listadk(int a);
-    listadk(int a, int b);
     void dodajglowa(int a);
+    void dodajogon(int a);
+    void dodajindex(int a, int b);
+    void wypisz(void);
 };

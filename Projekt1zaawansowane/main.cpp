@@ -5,5 +5,9 @@ using namespace std;
 int main()
 {
     listadk a(5);
-    a.dodajglowa(1);
+    a.dodajogon(1);
+    a.dodajogon(2);
+    a.dodajglowa(3);
+    a.dodajindex(5, 3);
+    a.wypisz();
 }

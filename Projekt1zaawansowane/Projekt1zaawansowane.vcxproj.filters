@@ -26,8 +26,5 @@
     <ClInclude Include="kom.h">
       <Filter>Pliki źródłowe</Filter>
     </ClInclude>
-    <ClInclude Include="es.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

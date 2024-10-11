@@ -1,0 +1,25 @@
+# Ignorowanie folderu .vs z ustawieniami Visual Studio
+.vs/
+# Ignoruj folder .vs i inne pliki tymczasowe Visual Studio
+Projekt1zaawansowane/.vs/
+Projekt1zaawansowane/*.opendb
+Projekt1zaawansowane/Debug/
+Projekt1zaawansowane/Release/
+
+# Ignorowanie plików opendb (baza danych intellisense)
+*.opendb
+*.VC.opendb
+
+# Ignorowanie plików binarnych i tymczasowych
+Debug/
+Release/
+*.obj
+*.exe
+*.dll
+*.log
+*.pdb
+*.idb
+*.suo
+*.user
+*.ipch
+*.lastcodeanalysissucceeded

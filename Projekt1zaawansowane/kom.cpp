@@ -3,7 +3,6 @@
 using namespace std;
 
     kom::kom(int a) : a(a), next(nullptr), prev(nullptr) {}
-    kom::kom() : next(nullptr), prev(nullptr) {};
 
     listadk::listadk(int a) { glowa = new kom(a),ogon=glowa; }
     void listadk::dodajglowa(int a) {

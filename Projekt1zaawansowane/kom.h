@@ -8,7 +8,6 @@ public:
     kom(int a);
     kom();
 };
-
 class listadk {
 private:
     kom* glowa;

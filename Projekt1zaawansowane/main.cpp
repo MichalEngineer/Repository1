@@ -7,6 +7,8 @@ int main()
     listadk a(5);
     a.wypisz();
     a.dodajogon(1);
+    a.wypisznext(0);
+    a.wypiszprev(1);
     a.wypisz();
     a.dodajglowa(3);
     a.wypisz();

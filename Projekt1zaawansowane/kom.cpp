@@ -31,19 +31,19 @@ using namespace std;
             this->minusglowa();
             return;
         }
-        kom* b = glowa;
-        for (int i = 0;b != nullptr && i < a;i++) { b = b->next; }
-        if (b == nullptr) {
+        kom* o = glowa;
+        for (int i = 0;o != nullptr && i < a;i++) { o = o->next; }
+        if (o == nullptr) {
             this->minusogon();
             return;
         }
-        if (b->prev != nullptr) {
-            b->prev->next = b->next;
+        if (o->prev != nullptr) {
+            o->prev->next = o->next;
         }
-        if (b->next != nullptr) {
-            b->next->prev = b->prev;
+        if (o->next != nullptr) {
+            o->next->prev = o->prev;
         }
-        delete b;
+        delete o;
         };
     void listadk::minusogon(void) {
         if (!ogon) { cout << "brak ogon\n"; }
@@ -77,11 +77,43 @@ using namespace std;
                 ogon = komn;  
             }
         }
-        
     }
     void listadk::wypisz(void) {
+        if (!glowa) {
+            cout << "brak glowy\n";
+            return;
+        }
         kom* o = glowa;
         cout << endl;
-        for (int i = 0;o != nullptr;i++) { cout<<o->a,o = o->next; }
+        for (int i = 0;o != nullptr;i++) { 
+        cout << o->a;
+        o = o->next; 
+        }
         cout << endl;
+    }
+    void listadk::wypisztyl(void) {
+        kom* o = ogon;
+        cout << endl;
+        for (int i = 0;o != nullptr;i++) { cout << o->a, o = o->next; }
+        cout << endl;
+    }
+    void listadk::wypisznext(int a) {
+        if (!glowa) {
+            cout << "brak glowy\n";
+            return;
+        }
+        kom* o = glowa;
+        for (int i = 0;o != nullptr && i < a;i++) { o = o->next; }
+        kom* s = o->next;
+        cout << s->a;
+    }
+    void listadk::wypiszprev(int a){
+        if (!glowa) {
+            cout << "brak glowy\n";
+            return;
+        }
+        kom* o = glowa;
+        for (int i = 0;o != nullptr && i < a;i++) { o = o->next; }
+        kom* s = o->prev;
+        cout << s->a;
     }

@@ -22,4 +22,7 @@ public:
     void dodajindex(int a, int b);
     void minusindex(int a);
     void wypisz(void);
+    void wypisztyl(void);
+    void wypisznext(int a);
+    void wypiszprev(int a);
 };

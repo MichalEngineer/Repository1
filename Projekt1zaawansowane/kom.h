@@ -25,4 +25,5 @@ public:
     void wypisztyl(void);
     void wypisznext(int a);
     void wypiszprev(int a);
+    void usun(void)
 };

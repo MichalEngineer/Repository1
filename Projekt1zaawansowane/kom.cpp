@@ -117,3 +117,6 @@ using namespace std;
         kom* s = o->prev;
         cout << s->a;
     }
+    void listadk::usun(void){
+        while(head != nullptr) { this.minusglowa();}
+    }

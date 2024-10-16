@@ -94,7 +94,7 @@ using namespace std;
         kom* o = glowa;
         cout << endl;
         for (int i = 0;o != nullptr;i++) { 
-        cout << o->a;
+        cout<< o->a << "  ";
         o = o->next; 
         }
         cout << endl;
@@ -102,7 +102,7 @@ using namespace std;
     void listadk::wypisztyl(void) {
         kom* o = ogon;
         cout << endl;
-        for (int i = 0;o != nullptr;i++) { cout << o->a, o = o->next; }
+        for (int i = 0;o != nullptr;i++) { cout << o->a << "  ", o = o->prev; }
         cout << endl;
     }
     void listadk::wypisznext(int a) {

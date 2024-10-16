@@ -1,5 +1,6 @@
 .vs/
-Projekt1zaawansowane/.vs/
+Projekt1zaawansowane/Projekt1zaawansowane.vcxproj
+Projekt1zaawansowane/Projekt1zaawansowane.vcxproj.*
 Projekt1zaawansowane/*.opendb
 Projekt1zaawansowane/Debug/
 Projekt1zaawansowane/Release/

@@ -19,8 +19,10 @@ using namespace std;
             cout << "brak glowy\n";
             return; }
         glowa = glowa->next;
-        glowa->prev = nullptr;
-
+        if (glowa) {
+            glowa->prev = nullptr;
+        }
+        else { ogon = nullptr; }
     }
     void listadk::minusindex(int a){
         if (!glowa) {
@@ -48,7 +50,10 @@ using namespace std;
     void listadk::minusogon(void) {
         if (!ogon) { cout << "brak ogon\n"; }
         ogon = ogon->prev;
-        ogon->next = nullptr;
+        if (ogon) {
+            ogon->next = nullptr;
+        }
+        else { glowa = nullptr; }
 
     }
     void listadk::dodajogon(int a) {
@@ -62,7 +67,10 @@ using namespace std;
     }
     void listadk::dodajindex(int a, int b) {
         kom* komn = new kom(a);
-        if (b == 0) { dodajglowa(a); }
+        if (b == 0) {
+            dodajglowa(a);
+            return;
+        }
         kom* o = glowa;
         for (int i = 0;o != nullptr && i < b;i++) { o = o->next; }
         if (o == nullptr) { dodajogon(a); }
@@ -105,7 +113,7 @@ using namespace std;
         kom* o = glowa;
         for (int i = 0;o != nullptr && i < a;i++) { o = o->next; }
         kom* s = o->next;
-        cout << s->a;
+        cout << s->a<<endl;
     }
     void listadk::wypiszprev(int a){
         if (!glowa) {
@@ -115,5 +123,10 @@ using namespace std;
         kom* o = glowa;
         for (int i = 0;o != nullptr && i < a;i++) { o = o->next; }
         kom* s = o->prev;
-        cout << s->a;
+        cout << s->a<<endl;
+    }
+    void listadk::usun(void) {
+        while (glowa != nullptr) { 
+           minusglowa(); 
+        }
     }

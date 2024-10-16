@@ -14,6 +14,43 @@ using namespace std;
 
         }
     }
+    void listadk::minusglowa(void) {
+        if (!glowa) {
+            cout << "brak glowy\n";
+            return; }
+        glowa = glowa->next;
+        glowa->prev = nullptr;
+
+    }
+    void listadk::minusindex(int a){
+        if (!glowa) {
+            cout << "brak glowy\n";
+            return;
+        }
+        if (a == 0) {
+            this->minusglowa();
+            return;
+        }
+        kom* b = glowa;
+        for (int i = 0;b != nullptr && i < a;i++) { b = b->next; }
+        if (b == nullptr) {
+            this->minusogon();
+            return;
+        }
+        if (b->prev != nullptr) {
+            b->prev->next = b->next;
+        }
+        if (b->next != nullptr) {
+            b->next->prev = b->prev;
+        }
+        delete b;
+        };
+    void listadk::minusogon(void) {
+        if (!ogon) { cout << "brak ogon\n"; }
+        ogon = ogon->prev;
+        ogon->next = nullptr;
+
+    }
     void listadk::dodajogon(int a) {
         kom* komn = new kom(a);
         if (!ogon) { glowa = ogon = komn; }

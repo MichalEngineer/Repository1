@@ -1,47 +1,316 @@
 \doxysection{listadk Class Reference}
 \hypertarget{classlistadk}{}\label{classlistadk}\index{listadk@{listadk}}
+
+
+Klasa listadk reprezentujaca liste dwukierunkowa.  
+
+
+
+
+{\ttfamily \#include $<$kom.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classlistadk_a28f11a42fde55234d925979b944a122a}\label{classlistadk_a28f11a42fde55234d925979b944a122a} 
-{\bfseries listadk} (int a)
+\mbox{\hyperlink{classlistadk_a28f11a42fde55234d925979b944a122a}{listadk}} (int a)
+\begin{DoxyCompactList}\small\item\em Konstruktor listy dwukierunkowej, ktory tworzy liste z jednym elementem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlistadk_a710f2b90f6277b1ead867a3deff11255}{\texorpdfstring{$\sim$}{\string~}listadk}} (void)
+\begin{DoxyCompactList}\small\item\em Destruktor listy. Usuwa wszystkie elementy listy i zwalnia pamiec. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlistadk_ae4333981f702c849c252fdf736973db4}{dodajglowa}} (int a)
+\begin{DoxyCompactList}\small\item\em Dodaje nowy element o wartosci a na poczatku listy (przed glowa). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlistadk_aefdbed0e31b74821dc465f5bbfe8b816}{dodajogon}} (int a)
+\begin{DoxyCompactList}\small\item\em Dodaje nowy element o wartosci a na koñcu listy (za ogonem). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlistadk_a258fcbb6e81ac9db6fd60f98328e2569}{minusglowa}} (void)
+\begin{DoxyCompactList}\small\item\em Usuwa element z poczatku listy (glowy). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlistadk_ad7fdeaec6f405252a6859bcb127ff8ea}{minusogon}} (void)
+\begin{DoxyCompactList}\small\item\em Usuwa element z koñca listy (ogona). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlistadk_a6b13730842027ec12ff6e16790d7740e}{dodajindex}} (int a, int b)
+\begin{DoxyCompactList}\small\item\em Dodaje nowy element o wartosci a na pozycji b. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlistadk_a826118be0e086665e014f5e9db2dad83}{minusindex}} (int a)
+\begin{DoxyCompactList}\small\item\em Usuwa element z podanego indeksu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlistadk_a5b270ce3f9ae0cb1c937f325f9d5326d}{wypisz}} (void)
+\begin{DoxyCompactList}\small\item\em Wypisuje zawartosc listy od glowy do ogona. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlistadk_a4518798f7c5413d4882e485efb2a87a5}{wypisztyl}} (void)
+\begin{DoxyCompactList}\small\item\em Wypisuje zawartosc listy od ogona do glowy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlistadk_a5b4d58af471dc495633f2cfa647f6cc6}{wypisznext}} (int a)
+\begin{DoxyCompactList}\small\item\em Wypisuje wartosc elementu, ktory znajduje sie po elemencie o wartosci a. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlistadk_a43dcee55d3090f5a83e7123d160061bb}{wypiszprev}} (int a)
+\begin{DoxyCompactList}\small\item\em Wypisuje wartosc elementu, ktory znajduje sie przed elementem o wartosci a. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlistadk_ab704e6ccca519c851934b29f32c5397e}{usun}} (void)
+\begin{DoxyCompactList}\small\item\em Usuwa wszystkie elementy z listy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classlistadk_ae4333981f702c849c252fdf736973db4}\label{classlistadk_ae4333981f702c849c252fdf736973db4} 
-void {\bfseries dodajglowa} (int a)
-\item 
-\Hypertarget{classlistadk_aefdbed0e31b74821dc465f5bbfe8b816}\label{classlistadk_aefdbed0e31b74821dc465f5bbfe8b816} 
-void {\bfseries dodajogon} (int a)
-\item 
-\Hypertarget{classlistadk_a258fcbb6e81ac9db6fd60f98328e2569}\label{classlistadk_a258fcbb6e81ac9db6fd60f98328e2569} 
-void {\bfseries minusglowa} (void)
-\item 
-\Hypertarget{classlistadk_ad7fdeaec6f405252a6859bcb127ff8ea}\label{classlistadk_ad7fdeaec6f405252a6859bcb127ff8ea} 
-void {\bfseries minusogon} (void)
-\item 
-\Hypertarget{classlistadk_a6b13730842027ec12ff6e16790d7740e}\label{classlistadk_a6b13730842027ec12ff6e16790d7740e} 
-void {\bfseries dodajindex} (int a, int b)
-\item 
-\Hypertarget{classlistadk_a826118be0e086665e014f5e9db2dad83}\label{classlistadk_a826118be0e086665e014f5e9db2dad83} 
-void {\bfseries minusindex} (int a)
-\item 
-\Hypertarget{classlistadk_a5b270ce3f9ae0cb1c937f325f9d5326d}\label{classlistadk_a5b270ce3f9ae0cb1c937f325f9d5326d} 
-void {\bfseries wypisz} (void)
-\item 
-\Hypertarget{classlistadk_a4518798f7c5413d4882e485efb2a87a5}\label{classlistadk_a4518798f7c5413d4882e485efb2a87a5} 
-void {\bfseries wypisztyl} (void)
-\item 
-\Hypertarget{classlistadk_a5b4d58af471dc495633f2cfa647f6cc6}\label{classlistadk_a5b4d58af471dc495633f2cfa647f6cc6} 
-void {\bfseries wypisznext} (int a)
-\item 
-\Hypertarget{classlistadk_a43dcee55d3090f5a83e7123d160061bb}\label{classlistadk_a43dcee55d3090f5a83e7123d160061bb} 
-void {\bfseries wypiszprev} (int a)
-\item 
-\Hypertarget{classlistadk_ab704e6ccca519c851934b29f32c5397e}\label{classlistadk_ab704e6ccca519c851934b29f32c5397e} 
-void {\bfseries usun} (void)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classkom}{kom}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classlistadk_a1120d2f416ad22d8f4ffde4d02f0ad71}{glowa}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na pierwszy element listy (glowa). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classkom}{kom}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classlistadk_a5f57ab672d7a7d65acbad38fead7a39f}{ogon}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na ostatni element listy (ogon). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa listadk reprezentujaca liste dwukierunkowa. 
+
+Definition at line \mbox{\hyperlink{kom_8h_source_l00024}{24}} of file \mbox{\hyperlink{kom_8h_source}{kom.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classlistadk_a28f11a42fde55234d925979b944a122a}\index{listadk@{listadk}!listadk@{listadk}}
+\index{listadk@{listadk}!listadk@{listadk}}
+\doxysubsubsection{\texorpdfstring{listadk()}{listadk()}}
+{\footnotesize\ttfamily \label{classlistadk_a28f11a42fde55234d925979b944a122a} 
+listadk\+::listadk (\begin{DoxyParamCaption}\item[{int}]{a}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor listy dwukierunkowej, ktory tworzy liste z jednym elementem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Wartosc pierwszego elementu listy. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{kom_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{kom_8cpp_source}{kom.\+cpp}}.
+
+\Hypertarget{classlistadk_a710f2b90f6277b1ead867a3deff11255}\index{listadk@{listadk}!````~listadk@{\texorpdfstring{$\sim$}{\string~}listadk}}
+\index{````~listadk@{\texorpdfstring{$\sim$}{\string~}listadk}!listadk@{listadk}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}listadk()}{\string~listadk()}}
+{\footnotesize\ttfamily \label{classlistadk_a710f2b90f6277b1ead867a3deff11255} 
+listadk\+::\texorpdfstring{$\sim$}{\string~}listadk (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Destruktor listy. Usuwa wszystkie elementy listy i zwalnia pamiec. 
+
+
+
+Definition at line \mbox{\hyperlink{kom_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{kom_8cpp_source}{kom.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlistadk_ae4333981f702c849c252fdf736973db4}\index{listadk@{listadk}!dodajglowa@{dodajglowa}}
+\index{dodajglowa@{dodajglowa}!listadk@{listadk}}
+\doxysubsubsection{\texorpdfstring{dodajglowa()}{dodajglowa()}}
+{\footnotesize\ttfamily \label{classlistadk_ae4333981f702c849c252fdf736973db4} 
+void listadk\+::dodajglowa (\begin{DoxyParamCaption}\item[{int}]{a}{}\end{DoxyParamCaption})}
+
+
+
+Dodaje nowy element o wartosci a na poczatku listy (przed glowa). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Wartosc nowego elementu. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{kom_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{kom_8cpp_source}{kom.\+cpp}}.
+
+\Hypertarget{classlistadk_a6b13730842027ec12ff6e16790d7740e}\index{listadk@{listadk}!dodajindex@{dodajindex}}
+\index{dodajindex@{dodajindex}!listadk@{listadk}}
+\doxysubsubsection{\texorpdfstring{dodajindex()}{dodajindex()}}
+{\footnotesize\ttfamily \label{classlistadk_a6b13730842027ec12ff6e16790d7740e} 
+void listadk\+::dodajindex (\begin{DoxyParamCaption}\item[{int}]{a}{, }\item[{int}]{b}{}\end{DoxyParamCaption})}
+
+
+
+Dodaje nowy element o wartosci a na pozycji b. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Wartosc nowego elementu. \\
+\hline
+{\em b} & Indeks, na ktorym nalezy wstawic nowy element. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{kom_8cpp_source_l00069}{69}} of file \mbox{\hyperlink{kom_8cpp_source}{kom.\+cpp}}.
+
+\Hypertarget{classlistadk_aefdbed0e31b74821dc465f5bbfe8b816}\index{listadk@{listadk}!dodajogon@{dodajogon}}
+\index{dodajogon@{dodajogon}!listadk@{listadk}}
+\doxysubsubsection{\texorpdfstring{dodajogon()}{dodajogon()}}
+{\footnotesize\ttfamily \label{classlistadk_aefdbed0e31b74821dc465f5bbfe8b816} 
+void listadk\+::dodajogon (\begin{DoxyParamCaption}\item[{int}]{a}{}\end{DoxyParamCaption})}
+
+
+
+Dodaje nowy element o wartosci a na koñcu listy (za ogonem). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Wartosc nowego elementu. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{kom_8cpp_source_l00060}{60}} of file \mbox{\hyperlink{kom_8cpp_source}{kom.\+cpp}}.
+
+\Hypertarget{classlistadk_a258fcbb6e81ac9db6fd60f98328e2569}\index{listadk@{listadk}!minusglowa@{minusglowa}}
+\index{minusglowa@{minusglowa}!listadk@{listadk}}
+\doxysubsubsection{\texorpdfstring{minusglowa()}{minusglowa()}}
+{\footnotesize\ttfamily \label{classlistadk_a258fcbb6e81ac9db6fd60f98328e2569} 
+void listadk\+::minusglowa (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Usuwa element z poczatku listy (glowy). 
+
+
+
+Definition at line \mbox{\hyperlink{kom_8cpp_source_l00018}{18}} of file \mbox{\hyperlink{kom_8cpp_source}{kom.\+cpp}}.
+
+\Hypertarget{classlistadk_a826118be0e086665e014f5e9db2dad83}\index{listadk@{listadk}!minusindex@{minusindex}}
+\index{minusindex@{minusindex}!listadk@{listadk}}
+\doxysubsubsection{\texorpdfstring{minusindex()}{minusindex()}}
+{\footnotesize\ttfamily \label{classlistadk_a826118be0e086665e014f5e9db2dad83} 
+void listadk\+::minusindex (\begin{DoxyParamCaption}\item[{int}]{a}{}\end{DoxyParamCaption})}
+
+
+
+Usuwa element z podanego indeksu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Indeks elementu, ktory ma zostac usuniety. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{kom_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{kom_8cpp_source}{kom.\+cpp}}.
+
+\Hypertarget{classlistadk_ad7fdeaec6f405252a6859bcb127ff8ea}\index{listadk@{listadk}!minusogon@{minusogon}}
+\index{minusogon@{minusogon}!listadk@{listadk}}
+\doxysubsubsection{\texorpdfstring{minusogon()}{minusogon()}}
+{\footnotesize\ttfamily \label{classlistadk_ad7fdeaec6f405252a6859bcb127ff8ea} 
+void listadk\+::minusogon (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Usuwa element z koñca listy (ogona). 
+
+
+
+Definition at line \mbox{\hyperlink{kom_8cpp_source_l00051}{51}} of file \mbox{\hyperlink{kom_8cpp_source}{kom.\+cpp}}.
+
+\Hypertarget{classlistadk_ab704e6ccca519c851934b29f32c5397e}\index{listadk@{listadk}!usun@{usun}}
+\index{usun@{usun}!listadk@{listadk}}
+\doxysubsubsection{\texorpdfstring{usun()}{usun()}}
+{\footnotesize\ttfamily \label{classlistadk_ab704e6ccca519c851934b29f32c5397e} 
+void listadk\+::usun (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Usuwa wszystkie elementy z listy. 
+
+
+
+Definition at line \mbox{\hyperlink{kom_8cpp_source_l00129}{129}} of file \mbox{\hyperlink{kom_8cpp_source}{kom.\+cpp}}.
+
+\Hypertarget{classlistadk_a5b270ce3f9ae0cb1c937f325f9d5326d}\index{listadk@{listadk}!wypisz@{wypisz}}
+\index{wypisz@{wypisz}!listadk@{listadk}}
+\doxysubsubsection{\texorpdfstring{wypisz()}{wypisz()}}
+{\footnotesize\ttfamily \label{classlistadk_a5b270ce3f9ae0cb1c937f325f9d5326d} 
+void listadk\+::wypisz (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Wypisuje zawartosc listy od glowy do ogona. 
+
+
+
+Definition at line \mbox{\hyperlink{kom_8cpp_source_l00090}{90}} of file \mbox{\hyperlink{kom_8cpp_source}{kom.\+cpp}}.
+
+\Hypertarget{classlistadk_a5b4d58af471dc495633f2cfa647f6cc6}\index{listadk@{listadk}!wypisznext@{wypisznext}}
+\index{wypisznext@{wypisznext}!listadk@{listadk}}
+\doxysubsubsection{\texorpdfstring{wypisznext()}{wypisznext()}}
+{\footnotesize\ttfamily \label{classlistadk_a5b4d58af471dc495633f2cfa647f6cc6} 
+void listadk\+::wypisznext (\begin{DoxyParamCaption}\item[{int}]{a}{}\end{DoxyParamCaption})}
+
+
+
+Wypisuje wartosc elementu, ktory znajduje sie po elemencie o wartosci a. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Wartosc elementu, po ktorym ma zostac wypisany nastepny element. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{kom_8cpp_source_l00109}{109}} of file \mbox{\hyperlink{kom_8cpp_source}{kom.\+cpp}}.
+
+\Hypertarget{classlistadk_a43dcee55d3090f5a83e7123d160061bb}\index{listadk@{listadk}!wypiszprev@{wypiszprev}}
+\index{wypiszprev@{wypiszprev}!listadk@{listadk}}
+\doxysubsubsection{\texorpdfstring{wypiszprev()}{wypiszprev()}}
+{\footnotesize\ttfamily \label{classlistadk_a43dcee55d3090f5a83e7123d160061bb} 
+void listadk\+::wypiszprev (\begin{DoxyParamCaption}\item[{int}]{a}{}\end{DoxyParamCaption})}
+
+
+
+Wypisuje wartosc elementu, ktory znajduje sie przed elementem o wartosci a. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Wartosc elementu, przed ktorym ma zostac wypisany poprzedni element. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{kom_8cpp_source_l00119}{119}} of file \mbox{\hyperlink{kom_8cpp_source}{kom.\+cpp}}.
+
+\Hypertarget{classlistadk_a4518798f7c5413d4882e485efb2a87a5}\index{listadk@{listadk}!wypisztyl@{wypisztyl}}
+\index{wypisztyl@{wypisztyl}!listadk@{listadk}}
+\doxysubsubsection{\texorpdfstring{wypisztyl()}{wypisztyl()}}
+{\footnotesize\ttfamily \label{classlistadk_a4518798f7c5413d4882e485efb2a87a5} 
+void listadk\+::wypisztyl (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Wypisuje zawartosc listy od ogona do glowy. 
+
+
+
+Definition at line \mbox{\hyperlink{kom_8cpp_source_l00103}{103}} of file \mbox{\hyperlink{kom_8cpp_source}{kom.\+cpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classlistadk_a1120d2f416ad22d8f4ffde4d02f0ad71}\index{listadk@{listadk}!glowa@{glowa}}
+\index{glowa@{glowa}!listadk@{listadk}}
+\doxysubsubsection{\texorpdfstring{glowa}{glowa}}
+{\footnotesize\ttfamily \label{classlistadk_a1120d2f416ad22d8f4ffde4d02f0ad71} 
+\mbox{\hyperlink{classkom}{kom}}\texorpdfstring{$\ast$}{*} listadk\+::glowa\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wskaznik na pierwszy element listy (glowa). 
+
+
+
+Definition at line \mbox{\hyperlink{kom_8h_source_l00026}{26}} of file \mbox{\hyperlink{kom_8h_source}{kom.\+h}}.
+
+\Hypertarget{classlistadk_a5f57ab672d7a7d65acbad38fead7a39f}\index{listadk@{listadk}!ogon@{ogon}}
+\index{ogon@{ogon}!listadk@{listadk}}
+\doxysubsubsection{\texorpdfstring{ogon}{ogon}}
+{\footnotesize\ttfamily \label{classlistadk_a5f57ab672d7a7d65acbad38fead7a39f} 
+\mbox{\hyperlink{classkom}{kom}}\texorpdfstring{$\ast$}{*} listadk\+::ogon\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wskaznik na ostatni element listy (ogon). 
+
+
+
+Definition at line \mbox{\hyperlink{kom_8h_source_l00027}{27}} of file \mbox{\hyperlink{kom_8h_source}{kom.\+h}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-kom.\+h\item 
-kom.\+cpp\end{DoxyCompactItemize}
+Projekt1zaawansowane/\mbox{\hyperlink{kom_8h}{kom.\+h}}\item 
+Projekt1zaawansowane/\mbox{\hyperlink{kom_8cpp}{kom.\+cpp}}\end{DoxyCompactItemize}

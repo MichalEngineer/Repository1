@@ -15,6 +15,7 @@ private:
 
 public:
     listadk(int a);
+    ~listadk(void);
     void dodajglowa(int a);
     void dodajogon(int a);
     void minusglowa(void);

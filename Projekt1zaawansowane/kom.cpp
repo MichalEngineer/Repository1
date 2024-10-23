@@ -4,6 +4,7 @@ using namespace std;
 
     kom::kom(int a) : a(a), next(nullptr), prev(nullptr) {}
     listadk::listadk(int a) { glowa = new kom(a),ogon=glowa; }
+    listadk::~listadk(void) { this->usun(); }
     void listadk::dodajglowa(int a) {
         kom* komn = new kom(a);
         if (!glowa) { glowa = ogon = komn; }
